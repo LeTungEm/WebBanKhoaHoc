@@ -1,0 +1,169 @@
+a{
+    text-decoration: none !important; 
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+/* =================================Header============================= */
+/* ========================================================================== */
+
+#header{
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* =================================Home============================= */
+/* ========================================================================== */
+.scrollView {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none; */
+}
+/* 
+.scrollView::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+} */
+
+.scrollVer {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+.scrollVer::-webkit-scrollbar {
+    width: 0 !important;
+    display: none;
+}
+
+
+    .list-group-item{
+        border: none;
+    }
+        .card {
+            width: 250px;
+            height: 200px !important;
+            position: relative;
+            border-top-left-radius: 20% !important;
+            border-bottom-right-radius: 20% !important;
+            text-align: center;
+        }
+
+            .show_Button {
+                width: 100%;
+                height: 0px;
+                background: #41414152;
+                position: absolute;
+                transition: .2s;
+                bottom: 0px;
+                border-top-left-radius: 20%;
+                border-bottom-right-radius: 20%;
+            }
+
+            .card:hover .show_Button {
+                height: 100%;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+            }
+
+                    .show_Button a {
+                        display: none;
+                    }
+
+                    .card:hover .show_Button a {
+                        display: block;
+                        position: inherit;
+                        
+                    }
+
+/* =================================CourseDetail============================= */
+/* ========================================================================== */
+.card .card-img{
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+.videoButton {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    background: #41414152;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+             
+
+/* =================================CusEditInfo============================= */
+/* ========================================================================== */
+#cbControl:checked + input{
+    display: block !important;
+}
+
+.delSDT:checked + input[type=text]{
+    text-decoration: line-through;
+}
+
+@media (max-width:1000px){
+    .card{
+        width: 230px;
+        height: 180px !important;
+    }
+    .user_menu .dropdown-menu{
+        left: 0 !important;
+        right: unset !important;
+    }
+}
+
+@media (max-width:500px){
+    .card{
+        width: 170px;
+        height: 120px !important;
+    }
+
+    .card-img-overlay h5{
+        font-size: 15px;
+    }
+
+    .card-img-overlay p{
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+
+    .show_Button a{
+        font-size: 12px;
+    }
+    /* cousers manager */
+    .courses-info .col{
+        font-size: 10px !important;
+    }
+
+    .courses-info .col i{
+        font-size: 17px !important;
+    }
+    /*  */
+
+    .customer-info .col{
+        font-size: 10px !important;
+    }
+
+    .customer-info .col i{
+        font-size: 17px !important;
+        background-color: dimgray;
+    }
+}
+
+@media (max-width:400px){
+    .card{
+        width: 150px;
+    }
+}
+  
+    
